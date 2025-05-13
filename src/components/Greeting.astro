@@ -1,0 +1,28 @@
+---
+// Determine the current time
+const currentHour = new Date().getHours();
+
+// Generate an appropriate greeting based on the time of day
+let greeting = "";
+let timeOfDay = "";
+
+if (currentHour >= 5 && currentHour < 12) {
+  greeting = "Good Morning";
+  timeOfDay = "morning";
+} else if (currentHour >= 12 && currentHour < 18) {
+  greeting = "Good Afternoon";
+  timeOfDay = "afternoon";
+} else {
+  greeting = "Good Evening";
+  timeOfDay = "evening";
+}
+---
+
+<div>
+  <h1>{greeting}!</h1>
+  <p>Welcome to your {timeOfDay}. We hope you have a wonderful day ahead.</p>
+  
+  {timeOfDay === "morning" && (
+    <p>Time for some breakfast and coffee to start your day!</p>
+  )}
+</div>

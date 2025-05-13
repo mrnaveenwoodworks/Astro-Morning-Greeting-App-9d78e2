@@ -1,0 +1,26 @@
+{
+  "name": "astro-morning-greeting-app",
+  "version": "1.0.0",
+  "description": "A simple Astro application that displays morning greetings to users based on the current time",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "keywords": [
+    "astro",
+    "greeting",
+    "morning"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "astro": "^3.0.0"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}
